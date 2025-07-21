@@ -10,7 +10,7 @@ const Footer = () => {
               <i className="fab fa-facebook-f"></i>
             </a>
           </div>
-          <p className="copyright">© PTAH LABS, Inc. ALL RIGHTS RESERVED.</p>
+          <p className="copyright">© 2024 PTAH LABS. ALL RIGHTS RESERVED.</p>
         </div>
       </div>
     </footer>

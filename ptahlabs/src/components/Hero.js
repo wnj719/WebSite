@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <section className="hero">
       <div className="container hero-content">
-        <h1 className="hero-title">프타 랩스 (PTAH LABS)</h1>
+        <h1 className="hero-title">PTAH LABS</h1>
         <p className="hero-subtitle">
           미디어아트와 전시 솔루션을 통해 혁신적인 디지털 경험을 창조합니다
         </p>

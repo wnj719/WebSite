@@ -46,7 +46,7 @@ const Header = () => {
     <header>
       <div className="container header-container">
         <a href="#" className="logo">
-          <img src="/images/logo.png" alt="PTAH LABS" className="logo-image" />
+          <img src="/logo.svg" alt="PTAH LABS" className="logo-image" />
           PTAH <span>LABS</span>
         </a>
 
