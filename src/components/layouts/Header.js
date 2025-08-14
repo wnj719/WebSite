@@ -45,9 +45,9 @@ const Header = () => {
   return (
     <header>
       <div className="container header-container">
-        <a href="#" className="logo">
+        <a href="/" className="logo">
           <img src="/logo.svg" alt="PTAH LABS" className="logo-image" />
-          PTAH <span>LABS</span>
+          PTAHLABS
         </a>
 
         <div className={`hamburger ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
@@ -58,7 +58,7 @@ const Header = () => {
 
         <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
           <li className="nav-item">
-            <a href="#" className={`nav-link ${activeSection === '' ? 'active' : ''}`} onClick={closeMenu}>Home</a>
+            <a href="/" className={`nav-link ${activeSection === '' ? 'active' : ''}`} onClick={closeMenu}>Home</a>
           </li>
           <li className="nav-item">
             <a href="#portfolio" className={`nav-link ${activeSection === 'portfolio' ? 'active' : ''}`} onClick={closeMenu}>Portfolio</a>

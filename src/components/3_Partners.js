@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Partners = () => {
   const partners = [
     { id: 1, alt: '협력사 1' },
