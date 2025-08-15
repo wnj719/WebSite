@@ -10,7 +10,11 @@
 2. CSS 이해     (classname)
 3. JavaScript 이해
 4. 프로젝트 이해
+
+</br>
+
 ~~브라우저 개발자 도구 사용법~~
+</br>
 ~~Flexbox/Grid 레이아웃~~
 
 ## React 기초
@@ -19,7 +23,11 @@
 3. npm start
 4. JSX 문법 이해 (HTML과 JavaScript 조합)
 5. 컴포넌트 개념 (함수형 컴포넌트)
+
+</br>
+
 ~~Props와 State 이해~~
+</br>
 ~~React Hooks (useState, useEffect)~~
 
 ## 도메인 연결
