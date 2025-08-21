@@ -46,7 +46,7 @@ const Header = () => {
     <header>
       <div className="container header-container">
         <a href="/" className="logo">
-          <img src="/logo.svg" alt="PTAH LABS" className="logo-image" />
+          <img src="/images/logo/2x/SignColor@2x.png" alt="PTAH LABS" className="logo-image" />
           PTAHLABS
         </a>
 
@@ -62,9 +62,6 @@ const Header = () => {
           </li>
           <li className="nav-item">
             <a href="#portfolio" className={`nav-link ${activeSection === 'portfolio' ? 'active' : ''}`} onClick={closeMenu}>Portfolio</a>
-          </li>
-          <li className="nav-item">
-            <a href="#partners" className={`nav-link ${activeSection === 'partners' ? 'active' : ''}`} onClick={closeMenu}>Partners</a>
           </li>
           <li className="nav-item">
             <a href="#ci" className={`nav-link ${activeSection === 'ci' ? 'active' : ''}`} onClick={closeMenu}>CI</a>
