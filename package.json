@@ -2,7 +2,7 @@
   "name": "ptahlabs",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ptahlabs.github.io/website",
+  "homepage": "https://2025-ptahlabs.github.io/WebSite",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
