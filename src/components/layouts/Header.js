@@ -7,7 +7,7 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll('section');
-      const navLinks = document.querySelectorAll('.nav-link');
+      // const navLinks = document.querySelectorAll('.nav-link');
       
       let current = '';
       
@@ -45,8 +45,8 @@ const Header = () => {
   return (
     <header>
       <div className="container header-container">
-        <a href="/" className="logo">
-          <img src="/images/logo/2x/SignColor@2x.png" alt="PTAH LABS" className="logo-image" />
+        <a href="#" className="logo">
+          <img src="./images/logo/2x/SignColor@2x.png" alt="PTAH LABS" className="logo-image" />
           PTAHLABS
         </a>
 
@@ -58,7 +58,7 @@ const Header = () => {
 
         <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
           <li className="nav-item">
-            <a href="/" className={`nav-link ${activeSection === '' ? 'active' : ''}`} onClick={closeMenu}>Home</a>
+            <a href="#" className={`nav-link ${activeSection === '' ? 'active' : ''}`} onClick={closeMenu}>Home</a>
           </li>
           <li className="nav-item">
             <a href="#portfolio" className={`nav-link ${activeSection === 'portfolio' ? 'active' : ''}`} onClick={closeMenu}>Portfolio</a>

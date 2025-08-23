@@ -7,7 +7,7 @@ const CI = () => {
         <div className="ci-content">
           <div className="ci-logo">
             <img
-              src="/images/logo.png"
+              src="./images/logo/2x/SignColor@2x.png"
               alt="PTAH LABS CI"
               className="ci-logo-image"
             />
