@@ -42,10 +42,15 @@ const Header = () => {
     setIsMenuOpen(false);
   };
 
+  const handleHomeClick = (e) => {
+    e.preventDefault();
+    window.location.reload();
+  };
+
   return (
     <header>
       <div className="container header-container">
-        <a href="#" className="logo">
+        <a href="/" className="logo" onClick={handleHomeClick}>
           <img src="./images/logo/2x/SignColor@2x.png" alt="PTAH LABS" className="logo-image" />
           PTAHLABS
         </a>
@@ -58,7 +63,7 @@ const Header = () => {
 
         <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
           <li className="nav-item">
-            <a href="#" className={`nav-link ${activeSection === '' ? 'active' : ''}`} onClick={closeMenu}>Home</a>
+            <a href="/" className={`nav-link ${activeSection === '' ? 'active' : ''}`} onClick={handleHomeClick}>Home</a>
           </li>
           <li className="nav-item">
             <a href="#portfolio" className={`nav-link ${activeSection === 'portfolio' ? 'active' : ''}`} onClick={closeMenu}>Portfolio</a>
