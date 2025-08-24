@@ -13,9 +13,6 @@
 
 </br>
 
-~~브라우저 개발자 도구 사용법~~
-</br>
-~~Flexbox/Grid 레이아웃~~
 
 ## React 기초
 1. Node.js & npm 설치
