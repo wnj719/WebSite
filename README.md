@@ -1,4 +1,4 @@
-# React 프로젝트 GitHub Pages 배포 가이드
+# 프로젝트 배포 가이드
 
 ## 1. gh-pages 패키지 설치
 React 프로젝트를 GitHub Pages에 배포하려면 `gh-pages` 패키지를 설치해야 합니다.
