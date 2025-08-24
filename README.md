@@ -15,9 +15,9 @@ npm install --save-dev gh-pages
 (1) homepage 추가
 ```json
 "homepage": "https://<GitHub_계정명>.github.io/<레포지토리명>"
+```
 homepage의 역할
 React 빌드 과정에서 정적 파일(JS, CSS, 이미지 등)의 기준 경로(base URL) 로 사용됩니다.
-```
 GitHub Pages에서 https://username.github.io/my-app/ 경로로 접근할 때,
 내부 파일 경로도 /my-app/static/... 형태로 맞춰주어야 정상 동작합니다.
 
