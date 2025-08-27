@@ -120,7 +120,8 @@ const Portfolio = () => {
               <div className="portfolio-overlay">
                 <h3 className="portfolio-title">{item.title}</h3>
                 <p className="portfolio-category">{item.category === 'media-art' ? '미디어아트' : item.category === 'exhibition' ? '전시' : '솔루션'}</p>
-                <a href="#" className="btn">자세히 보기</a>
+                {/* <a href="#" className="btn">자세히 보기</a> */}
+                <button className="btn">자세히 보기</button>
               </div>
             </div>
           ))}
