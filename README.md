@@ -1,44 +1,64 @@
-# TODO
+# 프로젝트 배포 가이드
 
-## 개발 환경
-1. vs code
-2. github desktop
-3. AI 툴, claude code (WSL2) 추천
+## 1. gh-pages 패키지 설치
+React 프로젝트를 GitHub Pages에 배포하려면 `gh-pages` 패키지를 설치해야 합니다.
 
-## 웹 개발 기초
-1. HTML 이해    (tag)
-2. CSS 이해     (classname)
-3. JavaScript 이해
-4. 프로젝트 이해
+```bash
+npm install --save-dev gh-pages
+```
+--save-dev 옵션은 해당 패키지를 개발용 의존성(devDependencies) 으로 설치합니다.
+즉, gh-pages는 배포 과정에서만 필요하고 실제 서비스 실행에는 필요 없기 때문에
+"dependencies"가 아닌 "devDependencies"에 추가됩니다.
 
-</br>
 
-~~브라우저 개발자 도구 사용법~~
-</br>
-~~Flexbox/Grid 레이아웃~~
+## 2. package.json 수정
+(1) homepage 추가
+```json
+"homepage": "https://<GitHub_계정명>.github.io/<레포지토리명>"
+```
+homepage의 역할
+React 빌드 과정에서 정적 파일(JS, CSS, 이미지 등)의 기준 경로(base URL) 로 사용됩니다.
+GitHub Pages에서 https://username.github.io/my-app/ 경로로 접근할 때,
+내부 파일 경로도 /my-app/static/... 형태로 맞춰주어야 정상 동작합니다.
 
-## React 기초
-1. Node.js & npm 설치
-2. npm install
-3. npm start
-4. JSX 문법 이해 (HTML과 JavaScript 조합)
-5. 컴포넌트 개념 (함수형 컴포넌트)
+예시:
 
-</br>
+```html
+<!-- homepage 미설정 시 -->
+<script src="/static/js/main.12345.js"></script>
 
-~~Props와 State 이해~~
-</br>
-~~React Hooks (useState, useEffect)~~
+<!-- homepage 설정 후 -->
+<script src="/my-app/static/js/main.12345.js"></script>
+```
+(2) scripts 수정
+```json
+"scripts": {
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
+```
+## 3. Router 설정
+React Router를 사용하는 경우 BrowserRouter에 basename을 지정해야 합니다.
 
-## 도메인 연결
-1. 퍼블릭으로 전환
-2. gh-pages로 자동 배포
-(github로 배포시 뒤로가기 안되니 참고 바람, 무료라 이용)
-3. 가비아 도메인에 연결
+```jsx
+import { BrowserRouter } from "react-router-dom";
 
-## 이미지 & 코드 자동 업데이트
-0. 이미지 파일 전달 예정
-1. 이미지 분류에 따른 Portfolio 스크립트 수정
-2. github workflow 이해
-3. 자동 배포 하도록 수정
-(폴더에 넣어 커밋하면 웹사이트에 자동으로 업데이트 되도록)
+<BrowserRouter basename="/<레포지토리명>/">
+  <App />
+</BrowserRouter>
+```
+필요 시 패키지를 설치합니다.
+
+```bash
+npm install react-router-dom
+```
+## 4. Build & Deploy
+```bash
+npm run build
+npm run deploy
+```
+npm run build → 빌드 폴더(build/) 생성
+
+npm run deploy → gh-pages 브랜치에 업로드 → GitHub Pages에 반영
