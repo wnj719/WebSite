@@ -44,7 +44,8 @@ const Header = () => {
 
   const handleHomeClick = (e) => {
     e.preventDefault();
-    window.location.reload();
+    // sessionStorage\uc5d0 \uc2a4\ud06c\ub864 \uc704\uce58\ub97c 0\uc73c\ub85c \uc800\uc7a5\ud558\uc5ec \uc0c8\ub85c\uace0\uce68 \ud6c4\uc5d0\ub3c4 \ucd5c\uc0c1\ub2e8\uc73c\ub85c \uc774\ub3d9\n    sessionStorage.setItem('scrollPosition', '0');
+    window.location.href = '/';
   };
 
   return (
