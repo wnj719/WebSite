@@ -62,3 +62,18 @@ npm run deploy
 npm run build → 빌드 폴더(build/) 생성
 
 npm run deploy → gh-pages 브랜치에 업로드 → GitHub Pages에 반영
+
+
+
+
+# 원본repository와 fork repository 이용 방법
+
+## 1. 수정내용 추가
+'Contrubute'를 통하여 fork repository의 수정 사항을 원본 repository에 추가
+
+## 2. 원본의 변경 내역 가져오기
+'Sync fork'를 통하여 원본 repository의 수정 사항을 fork repository에 추가
+
+## 3. Contributor
+컨트리뷰션은 오픈소스 프로젝트에 참여하고 기여하는 모든 활동을 의미(오타수정, 번역, 가이드 문서 작성, 디자인 작업, 의견 제시 등)
+
